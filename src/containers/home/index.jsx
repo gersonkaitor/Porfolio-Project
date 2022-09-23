@@ -51,9 +51,9 @@ const Home = () =>{
                         <a>Resume</a>
                     </div>
                     <div className='contact-me-social-wrapper'>
-                        <FaLinkedin size={40}/>
-                        <FaGithub size={40}/>
-                        <FaFacebook size={40}/>
+                        <FaLinkedin size={32}/>
+                        <FaGithub size={32}/>
+                        <FaFacebook size={32}/>
                     </div>
                 </div>
             </Animate>

@@ -9,6 +9,7 @@ import Skills from "./containers/skills";
 import Portfolio from "./containers/portfolio";
 import Resume from "./containers/resume";
 import Navbar from "./components/navBar";
+import Theme from "./components/theme";
 // import particlesConfig from "./helpers/particlesConfig";
 
 function App() {
@@ -37,6 +38,7 @@ function App() {
 
       {/* main page content */}
       <div className="App-main-content-wrapper">
+      <Theme/>
         <Routes>
           {/* create all routes*/}
           <Route path="/" index element={<Home />} />

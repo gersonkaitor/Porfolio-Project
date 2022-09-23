@@ -14,6 +14,27 @@
   --yellow-theme-sub-text-color : #ffffff;
   --yellow-theme-nav-background-color : #181818;
 
+   /* secondary color  red*/
+   --red-theme-background-color : #1d1d1d;
+   --red-theme-main-color : #E82A2A;
+   --red-theme-sub-text-color : #ffffff;
+   --red-theme-nav-background-color : #181818;
+
+    /* secondary color  blue*/
+  --blue-theme-background-color : #1d1d1d;
+  --blue-theme-main-color : #5078FF;
+  --blue-theme-sub-text-color : #ffffff;
+  --blue-theme-nav-background-color : #181818;
+
+   /* secondary color  green*/
+   --green-theme-background-color : #1d1d1d;
+   --green-theme-main-color : #6AC045;
+   --green-theme-sub-text-color : #ffffff;
+   --green-theme-nav-background-color : #181818;
+ 
+
+   
+
   --font-base : "Roboto Slab", serif;
 }
 
