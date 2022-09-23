@@ -1,7 +1,7 @@
 import "./App.scss";
-import { Routes, Route, useLocation } from "react-router-dom";
-import Particles from "react-tsparticles";
-import { loadFull } from "tsparticles";
+import { Routes, Route} from "react-router-dom";
+// import Particles from "react-tsparticles";
+// import { loadFull } from "tsparticles";
 import Home from "./containers/home";
 import About from "./containers/about";
 import Contact from "./containers/contact";
@@ -9,26 +9,26 @@ import Skills from "./containers/skills";
 import Portfolio from "./containers/portfolio";
 import Resume from "./containers/resume";
 import Navbar from "./components/navBar";
-import particlesConfig from "./helpers/particlesConfig";
+// import particlesConfig from "./helpers/particlesConfig";
 
 function App() {
-  const particlesInit = async (main) => {
-    await loadFull(main);
-  };
+  // const particlesInit = async (main) => {
+  //   await loadFull(main);
+  // };
 
-  const location = useLocation();
-  const renderParticleJsHomePage = location.pathname === "/";
+  // const location = useLocation();
+  // const renderParticleJsHomePage = location.pathname === "/";
 
   return (
     <div className="App">
       {/* particles js*/}
-      {renderParticleJsHomePage && (
+      {/* {renderParticleJsHomePage && (
         <Particles
           id="particles"
           options={particlesConfig}
           init={particlesInit}
         />
-      )}
+      )} */}
 
       {/* navbar component */}
       <div className="App-navbar-wrapper">
