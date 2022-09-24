@@ -1,0 +1,145 @@
+.about {
+  &-content {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    width: 100%;
+
+    &-personal-wrapper {
+      flex: 1;
+      h3 {
+        margin-bottom: 10px;
+        font-size: 2.5rem;
+        font-weight: 700;
+        font-family: "Roboto Slab", serif;
+        color: var(--selected-theme-main-color);
+      }
+
+      h3.personal-content {
+        padding-top: 20px;
+      }
+
+      p {
+        color: var(--selected-theme-sub-text-color);
+        font-size: 1.8rem;
+        line-height: 1.65;
+        padding-bottom: 20px;
+        border-bottom: 1px dashed var(--selected-theme-main-color);
+      }
+      ul > li {
+        line-height: 1rem;
+        margin-bottom: 15px;
+        list-style: none;
+
+        span.title,
+        span.value {
+          font-size: 18px;
+          font-weight: 800;
+          letter-spacing: 0.5px;
+          border-bottom: 2px solid var(--selected-theme-main-color);
+          position: relative;
+          display: inline-block;
+          margin-right: 16px;
+          padding-bottom: 1px;
+          color: var(--selected-theme-sub-text-color);
+        }
+        span.value {
+          border: none;
+
+          &::before {
+            content: " : ";
+          }
+        }
+      }
+    }
+    &-service-wrapper {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      &-inner-content {
+        width: 350px;
+        height: 350px;
+        position: relative;
+        border-radius: 50%;
+        border: 1.5px solid var(--selected-theme-main-color);
+        background: radial-gradient(
+          180px,
+          var(--selected-theme-main-color),
+          transparent 100%
+        );
+
+        div:nth-child(1) {
+          position: absolute;
+          top: -5%;
+          left: 41.5%;
+        }
+        div:nth-child(2) {
+          position: absolute;
+          top: 20%;
+          right: 1%;
+        }
+        div:nth-child(3) {
+          position: absolute;
+          bottom: 20%;
+          right: 1%;
+        }
+        div:nth-child(4) {
+          position: absolute;
+          bottom: -5%;
+          left: 41.5%;
+        }
+        div:nth-child(5) {
+          position: absolute;
+          bottom: 20%;
+        }
+        div:nth-child(6) {
+          position: absolute;
+          top: 20%;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .about-content {
+    display: flex;
+    flex-direction: column;
+    &-personal-wrapper {
+      margin-bottom: 20px;
+      ul > li {
+        span.title,
+        span.value {
+          font-size: 16px !important;
+        }
+      }
+    }
+  }
+}
+@media only screen and (min-width: 769px) and (max-width: 990px) {
+  .about-content {
+    display: flex;
+    &-personal-wrapper {
+      p {
+        font-size: 1.5rem;
+      }
+
+      ul > li {
+        span.title,
+        span.value {
+          font-size: 1.3rem !important;
+        }
+      }
+    }
+
+    &-service-wrapper {
+      &-inner-content {
+        width: 300px;
+        height: 300px;
+      }
+    }
+  }
+}
