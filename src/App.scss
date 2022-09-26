@@ -1,7 +1,5 @@
 .App{
   height: 100%;
-  background-color: #4e5153;
-  background-image: url("https://www.transparenttextures.com/patterns/diagmonds.png");
 
   &-navbar-wrapper{
     position: absolute;
@@ -14,17 +12,5 @@
     position: absolute;
     width: 100%;
     margin-top: 80px;
-  }
-}
-
-@media only screen and (max-width: 550px){
-  .App{
-    height: 135%;
-  }
-}
-
-@media only screen and (min-width:551px) and (max-width: 768px){
-  .App{
-     height: 120%;
   }
 }

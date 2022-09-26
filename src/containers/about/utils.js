@@ -12,7 +12,7 @@ export const personalData =[
         value : 'Mandaue City, Cebu, Philippines'
     },
     {
-        label : 'email',
+        label : 'Email',
         value : 'gersonkaitor@gmail.com'
     },    {
         label : 'Contact No',
